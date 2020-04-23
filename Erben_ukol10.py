@@ -37,7 +37,7 @@ def main():
             pocet_radku = line_counter(soubor)
             print(f"Počet slov: {pocet_slov}\nPočet znaků: {pocet_znaku}\nPočet řádků: {pocet_radku}")
     except:
-        print("Pokazilo se to")
+        print("Něco se pokazilo")
         sys.exit(1)
 def word_counter(f):
     pocet_slov = f.count(' ') + len(f.split('\n'))
